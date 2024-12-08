@@ -26,4 +26,4 @@ with open('data.txt') as f:
                 sum_value2 += int(values[0]) * int(values[1])
 
 print(f"Part One: {sum_value}")
-print(f"Part Two: {sum_value2}") #X<83950340
+print(f"Part Two: {sum_value2}")
