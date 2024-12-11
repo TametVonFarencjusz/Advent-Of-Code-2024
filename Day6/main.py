@@ -5,7 +5,6 @@ data = []
 with open('data.txt') as f:
     data = [line.strip() for line in f.readlines()]
     grid = [list(line) for line in data]
-    grid2_empty = [['' for i in list(line)] for line in data]
 
 
 def guard_move(board, x, y, d):
@@ -38,7 +37,6 @@ def guard_move2(board, x, y, d):
             if board[x][y] in ['.', '^']:
                 board[x][y] = [d]
             else:
-                # print(board[x][y])
                 if d in board[x][y]:
                     return [False, "LOOP"]
                 board[x][y].append(d)
